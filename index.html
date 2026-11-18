@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090817"><title>For You — Animated Lyrics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="home-page">
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">♫</span> FOR YOU</a><nav><a class="active" href="index.html">Player</a><a href="lyrics.html">Lyrics</a><a href="animations.html">Animations</a></nav></header>
+  <main class="player-layout">
+    <section class="cover-panel">
+      <div class="eyebrow">A LITTLE MUSIC, A LOT OF FEELING</div>
+      <div class="record-wrap"><div class="record"><div class="record-center">♫</div></div><div class="record-glow"></div></div>
+      <h1>When Lyrics<br><span>Move.</span></h1>
+      <p class="subcopy">Let every line find its moment.</p>
+      <div class="track-meta"><span class="live-dot"></span><span>YOUR FEATURED TRACK</span></div>
+      <p class="track-name">Your song <span>·</span> 01:00</p>
+    </section>
+    <section class="lyrics-panel">
+      <div class="panel-heading"><div><div class="eyebrow">SING IT WITH YOUR HEART</div><h2>Lyrics in motion</h2></div><span class="sound-icon">〰</span></div>
+      <div class="lyrics-stage" id="lyricsStage" aria-live="polite">
+        <p class="lyric-line previous" id="previousLine">Your lyrics will appear here</p>
+        <p class="lyric-line current" id="currentLine">Press play to begin</p>
+        <p class="lyric-line next" id="nextLine">Add your words in lyrics.html</p>
+      </div>
+      <div class="controls">
+        <div class="time-row"><span id="currentTime">0:00</span><span id="duration">0:00</span></div>
+        <input id="seekBar" class="seekbar" type="range" min="0" max="100" value="0" aria-label="Seek song">
+        <div class="control-row"><button class="round-button" id="restartBtn" aria-label="Restart">↺</button><button class="play-button" id="playBtn" aria-label="Play">▶</button><button class="round-button" id="muteBtn" aria-label="Mute">♫</button><input id="volumeBar" class="volume" type="range" min="0" max="1" step="0.01" value="0.85" aria-label="Volume"></div>
+      </div>
+      <div class="panel-footer"><span><i></i> SYNCED TO THE MUSIC</span><a href="lyrics.html">Edit lyrics ↗</a></div>
+    </section>
+  </main>
+  <audio id="audio" preload="metadata"><source src="song/xxx.mp3" type="audio/mpeg"></audio>
+  <footer class="site-footer">MADE FOR THE MOMENTS THAT MATTER <span>✦</span></footer>
+  <script src="app.js"></script>
+</body></html>
